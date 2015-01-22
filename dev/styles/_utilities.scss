@@ -1,0 +1,15 @@
+/* content centering styles */
+.u-centerVerticalOuterWrapper {
+    display:table;
+    height:100%;
+    min-height:100%;
+    overflow:hidden;
+    width:100%;
+}
+
+.u-centerVerticalInnerWrapper {
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+}
