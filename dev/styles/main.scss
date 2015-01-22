@@ -1,23 +1,32 @@
+html {
+    padding:0;
+    margin: 0;
+}
+
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-	display: flex;
+   padding: 0;
+   margin: 0; 
 }
 
-.hero-unit {
+.Hero {
+    background-image:  url("../../resources/business-communication-devices-3368.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    
+    height: 100vh;
+    font-family: arial;
+
+    h1 {
+        font-weight: bold;
+    }
+
+
+}
+
+.Hero-holder {
+    margin-top: 0;
+    width: 50%;
     margin: 0 auto;
-    max-width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-}
-
-.hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
