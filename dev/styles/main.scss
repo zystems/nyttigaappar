@@ -1,3 +1,8 @@
+@import "compass/css3";
+
+$font-stack: Helvetica, sans-serif;
+$body-color: #626262;
+
 html {
     padding:0;
     margin: 0;
@@ -6,27 +11,48 @@ html {
 body {
    padding: 0;
    margin: 0; 
+   font-family: $font-stack;
 }
 
 .Hero {
     background-image:  url("../../resources/business-communication-devices-3368.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    
     height: 100vh;
-    font-family: arial;
 
     h1 {
         font-weight: bold;
+        font-size: 13vw;
+        margin: 0;
+        @include single-text-shadow;
     }
 
+    h2 {
+        margin: 0;
+        font-size: 9vw;
+        @include single-text-shadow;
+    }
 
+    h3 {
+        margin: 15% 0 0 0;
+        font-size: 5vw;
+        @include single-text-shadow;
+    }
 }
 
 .Hero-holder {
-    margin-top: 0;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding: 10% 0 0 0;
+    align-self: center;
+    color: white;
 }
+
+.Timeline {
+    padding: 0 10%;
+}
+
+.Timeline-right {
+    color: $body-color;
+}
+
