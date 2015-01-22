@@ -1,0 +1,61 @@
+.Timeline {
+}
+
+// Hidden on small screen sizes
+.Timeline-left {
+	visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+.Timeline-center {
+	background-color: #BBB;
+	width: 10%;
+	float: left;
+}
+
+.Timeline-right {
+	width: 90%;
+	float: left;
+    color: $text-color;
+}
+
+.Timeline-right--textbox {
+	padding: 100px 10% 0 10%;
+	max-width: 300px;
+}
+
+@media screen and (min-width: 0px) {
+	.Timeline-center {
+		width: 20%
+	}
+	.Timeline-right {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 470px) {
+	.Timeline-center {
+		width: 15%
+	}
+	.Timeline-right {
+		width: 85%;
+	}
+}
+
+@media screen and (min-width: 680px) {
+	.Timeline-left {
+		visibility: visible;
+    	position: static;
+    	top: 0px;
+    	background-color: #DDD;
+		width: 45%;
+		float: left;
+	}
+	.Timeline-center {
+		width: 10%;
+	}
+	.Timeline-right {
+		width: 45%;
+	}
+}
