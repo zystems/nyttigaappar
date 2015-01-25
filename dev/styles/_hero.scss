@@ -13,21 +13,21 @@
     color: $light-text-color;
 
     h1 {
-        font-size: 5em;
+        font-size: 4em;
         font-weight: $bold-font-weight;
         margin: 0;
     }
 
     h2 {
-        margin: 0;
-        font-size: 3em;
-        font-weight: $regular-font-weight;
+        margin: 15px 0 0 0;
+        font-size: 2.5em;
+        font-weight: $bold-font-weight;
     }
 
     h3 {
-        margin: 70px 0 0 0;
+        margin: 100px 0 0 0;
         font-size: 1.5em;
-        font-weight: $regular-font-weight;
+        font-weight: $bold-font-weight;
     }
 }
 
@@ -36,6 +36,18 @@
 */
 
 @media screen and (min-width: 680px) {
+    .Hero h1 {
+        font-size: 4.5em;
+    }
+    .Hero h2 {
+        font-size: 3em;
+    }
+    .Hero h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 960px) {
     .Hero h1 {
         font-size: 5.5em;
     }
@@ -47,26 +59,14 @@
     }
 }
 
-@media screen and (min-width: 960px) {
-    .Hero h1 {
-        font-size: 6em;
-    }
-    .Hero h2 {
-        font-size: 4em;
-    }
-    .Hero h3 {
-        font-size: 2em;
-    }
-}
-
 @media screen and (min-width: 1160px) {
     .Hero h1 {
-        font-size: 6.5em;
+        font-size: 5.5em;
     }
     .Hero h2 {
-        font-size: 4.5em;
+        font-size: 3.5em;
     }
     .Hero h3 {
-        font-size: 2.25em;
+        font-size: 1.75em;
     }
 }
