@@ -1,0 +1,30 @@
+.Infobox {
+	background-color: #FFF;
+	color: $text-color;
+	padding: 100px 10%;
+	text-align: left;
+}
+
+.Infobox:nth-of-type(odd) {
+	background-color: #0071BC;
+	color: $light-text-color;
+}
+
+@media screen and (min-width: 680px) {
+	.Infobox {
+		text-align: center;
+		padding: 100px 20%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.Infobox {
+		padding: 100px 25%;
+	}
+}
+
+@media screen and (min-width: 1160px) {
+	.Infobox {
+		padding: 100px 30%;
+	}
+}

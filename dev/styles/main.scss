@@ -3,10 +3,13 @@
 
 // Variables
 
-$base-font-family: Helvetica, sans-serif;
-$heading-font-family: Helvetica, sans-serif;
+$base-font-family: "proxima-nova", Helvetica, sans-serif;
+$heading-font-family: "ff-tisa-web-pro", Helvetica, sans-serif;
 $base-font-size: 20px;
-$base-font-weight: 100;
+$light-font-weight: 300;
+$regular-font-weight: 400;
+$semibold-font-weight: 600;
+$bold-font-weight: 700;
 
 $background-color: #FFF;
 $text-color: #323232;
@@ -27,7 +30,7 @@ body {
     color: $text-color;
     font-family: $base-font-family;
     font-size: $base-font-size;
-    font-weight: $base-font-weight;
+    font-weight: $light-font-weight;
     line-height: 150%;
 }
 
@@ -38,5 +41,6 @@ body {
 @import 
     "utilities",
     "hero",
-    "timeline" 
+    "timeline",
+    "infoboxes" 
 ;
