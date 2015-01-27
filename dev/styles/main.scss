@@ -6,6 +6,10 @@
 $base-font-family: "proxima-nova", Helvetica, sans-serif;
 $heading-font-family: "ff-tisa-sans-web-pro", Helvetica, sans-serif;
 $base-font-size: 20px;
+$h1-font-size: 30px;
+$h2-font-size: 26px;
+$h3-font-size: 20px;
+
 $light-font-weight: 300;
 $regular-font-weight: 400;
 $semibold-font-weight: 600;
@@ -32,6 +36,30 @@ body {
     font-size: $base-font-size;
     font-weight: $light-font-weight;
     line-height: 150%;
+}
+
+p {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $light-font-weight;
+}
+
+h1 {
+    font-family: $base-font-family;
+    font-size: $h1-font-size;
+    font-weight: $bold-font-weight;
+}
+
+h2 {
+    font-family: $base-font-family;
+    font-size: $h2-font-size;
+    font-weight: $bold-font-weight;
+}
+
+h3 {
+    font-family: $base-font-family;
+    font-size: $h3-font-size;
+    font-weight: $bold-font-weight;
 }
 
 /**
