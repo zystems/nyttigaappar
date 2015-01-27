@@ -1,0 +1,39 @@
+.Example-holder {
+}
+
+.Example-imageholder {
+	width: 100%;
+	background-color: #4e4e4e;
+
+}
+
+.Example-imageholder-left {
+	background-color: transparent;
+}
+
+.Each-example {
+	color: #EFEFEF;
+	padding: 2vh 0 2vh 0;
+	border-bottom: 1px solid #ffffff;
+	h2 {
+		margin-left: 5vw;
+	}
+}
+
+.Case-textholder {
+	-webkit-transition: height .5s;
+	background-color: #FFFFFF;
+	width: 100vw;
+	height: 0;
+	overflow: hidden;
+	p {
+		position: relative;
+		top: 50%;
+  		-webkit-transform: translateY(-50%);
+  		-ms-transform: translateY(-50%);
+  		transform: translateY(-50%);
+		color: $text-color;
+		margin: 0;
+		padding: 0 3vw 0 3vw;
+	}
+}
