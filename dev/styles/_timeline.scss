@@ -1,23 +1,48 @@
 .Timeline {
+	width: 100%;
+	float: left;
 }
 
 // Hidden on small screen sizes
 .Timeline-left {
+	float: left;
 	visibility: hidden;
     position: absolute;
     top: -9999px;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
 }
 
 .Timeline-center {
-	background-color: #BBB;
 	width: 10%;
+	height: auto;
+	height: 100%;
+	overflow: hidden;
+	background-color: #FFF;
+	position: relative;
 	float: left;
+	padding-bottom: 500em;
+    margin-bottom: -500em;
+}
+
+.Timeline-center--line {
+	border-left: solid #626262;
+	border-width: 1px;
+    vertical-align:top;
+	width: 1px;
+	margin: 0 auto;
+	height: 100%;
+	position: absolute;
 }
 
 .Timeline-right {
 	width: 90%;
 	float: left;
+	position: relative;
     color: $text-color;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+    margin-right: -1px; /* Thank you IE */
 }
 
 .Timeline-right--textbox {
