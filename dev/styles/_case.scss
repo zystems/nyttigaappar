@@ -1,14 +1,13 @@
 .Example-holder {
+	width: 100vw;
+	h1 {
+		text-align: center;
+	}
 }
 
 .Example-imageholder {
-	width: 100%;
+	width: 100vw;
 	background-color: #4e4e4e;
-
-}
-
-.Example-imageholder-left {
-	background-color: transparent;
 }
 
 .Each-example {
@@ -21,7 +20,7 @@
 }
 
 .Case-textholder {
-	-webkit-transition: height .5s;
+	transition: height .5s;
 	background-color: #FFFFFF;
 	width: 100vw;
 	height: 0;
@@ -35,5 +34,73 @@
 		color: $text-color;
 		margin: 0;
 		padding: 0 3vw 0 3vw;
+	}
+}
+
+@media screen and (min-width: 680px) {
+
+	.Example-holder {
+		overflow: hidden;
+	}
+
+	.Example-imageholder {
+		overflow: hidden;
+	}
+	
+	.Each-example {
+		border-bottom: 0;
+		width: 33vw;
+		height: auto;
+		float: left;
+		padding-bottom: 0;
+		h2 {
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+
+	.Example-imageholder-left {
+		background-color: #2e2e2e;
+	}
+
+	.Example-imageholder-center {
+		background-color: #6e6e6e;
+		border-top: 0;
+		border-left: 1px;
+		border-right: 1px;
+		border-style: solid;
+		border-color: #ffffff;
+	}
+
+	.Example-imageholder-right {
+		background-color: #6e6e6e;
+	}
+
+	.Case-textholder {
+		transition: 1s;
+		width: 100vw;
+		min-height: 200px;
+		p {
+			text-align: center;
+			padding: 0 20vw 0 20vw;
+			width: 60vw;
+			margin: 0;
+		}
+	}
+
+	.Case-textholder-left {
+		position: relative;
+		left: 0vw;
+		height: 200px;
+	}
+
+	.Case-textholder-center {
+		position: relative;
+		left: 65vw;
+	}
+
+	.Case-textholder-right {
+		position: relative;
+		left: 90vw;
 	}
 }
