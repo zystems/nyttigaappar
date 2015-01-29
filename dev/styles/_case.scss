@@ -17,6 +17,9 @@
 	h2 {
 		margin-left: 5vw;
 	}
+	img {
+			display: none;
+		}
 }
 
 .Case-textholder {
@@ -48,10 +51,9 @@
 	}
 	
 	.Each-example {
+		transition: 1s;
 		border-bottom: 0;
-		width: 33vw;
 		height: auto;
-		float: left;
 		padding-bottom: 0;
 		h2 {
 			margin-left: 0;
@@ -59,21 +61,45 @@
 		}
 	}
 
+	.Example-image {
+		display: block;
+		margin: 0 auto;
+		padding: 30px 0 10px 0;
+		width: 200px;
+		height: 200px;
+		img {
+			size: cover;
+			height: 200px;
+			width: 200px;
+			display: inline;
+			object-fit: cover;
+			border-radius: 0 50px 0 50px;
+			border: 1px;
+		}
+		img.desaturate { filter: grayscale(100%); }
+	}
+
 	.Example-imageholder-left {
+		width: 33vw;
+		float: left;
 		background-color: #2e2e2e;
 	}
 
 	.Example-imageholder-center {
 		background-color: #6e6e6e;
 		border-top: 0;
-		border-left: 1px;
-		border-right: 1px;
+		width: 34vw;
+		float: left;
+		border-left: 0px;
+		border-right: 0px;
 		border-style: solid;
 		border-color: #ffffff;
 	}
 
 	.Example-imageholder-right {
+		width: 33vw;
 		background-color: #6e6e6e;
+		float: right;
 	}
 
 	.Case-textholder {
