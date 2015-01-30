@@ -12,6 +12,7 @@
 
 .Each-example {
 	color: #EFEFEF;
+	background-color: transparent;
 	padding: 2vh 0 2vh 0;
 	border-bottom: 1px solid #ffffff;
 	h2 {
@@ -48,6 +49,7 @@
 
 	.Example-imageholder {
 		overflow: hidden;
+		cursor: pointer;
 	}
 	
 	.Each-example {
@@ -103,10 +105,13 @@
 	}
 
 	.Case-textholder {
+		cursor: default;
+		position: relative;
 		transition: 1s;
 		width: 100vw;
 		min-height: 200px;
 		p {
+			cursor: text;
 			text-align: center;
 			padding: 0 20vw 0 20vw;
 			width: 60vw;
@@ -128,5 +133,11 @@
 	.Case-textholder-right {
 		position: relative;
 		left: 90vw;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.Each-example {
+		background-color: transparent !important;
 	}
 }
