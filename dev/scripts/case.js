@@ -44,7 +44,7 @@ function toggleText(i) {
 				d[0].style.backgroundColor = '#6e6e6e';
 				c[1].style.left = '-130vw';
 				d[1].style.backgroundColor = '#6e6e6e';
-				c[2].style.left = '-66vw';
+				c[2].style.left = '-67vw';
 				d[2].style.backgroundColor = '#2e2e2e';
 				break;
 		}
