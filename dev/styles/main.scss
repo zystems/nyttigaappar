@@ -9,6 +9,10 @@ $base-font-size: 20px;
 $h1-font-size: 30px;
 $h2-font-size: 26px;
 $h3-font-size: 20px;
+$base-font-size-small: 16px;
+$h1-font-size-small: 26px;
+$h2-font-size-small: 22px;
+$h3-font-size-small: 16px;
 
 $light-font-weight: 300;
 $regular-font-weight: 400;
@@ -16,6 +20,7 @@ $semibold-font-weight: 600;
 $bold-font-weight: 700;
 
 $background-color: #FFF;
+$color-blue: #0071BC;
 $text-color: #323232;
 $light-text-color: #FFF;
 
@@ -33,33 +38,51 @@ body {
     background-color: $background-color;
     color: $text-color;
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: $base-font-size-small;
     font-weight: $light-font-weight;
     line-height: 150%;
 }
 
 p {
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: $base-font-size-small;
     font-weight: $light-font-weight;
 }
 
 h1 {
     font-family: $base-font-family;
-    font-size: $h1-font-size;
+    font-size: $h1-font-size-small;
     font-weight: $bold-font-weight;
 }
 
 h2 {
     font-family: $base-font-family;
-    font-size: $h2-font-size;
+    font-size: $h2-font-size-small;
     font-weight: $bold-font-weight;
 }
 
 h3 {
     font-family: $base-font-family;
-    font-size: $h3-font-size;
+    font-size: $h3-font-size-small;
     font-weight: $bold-font-weight;
+}
+
+@media screen and (min-width: 680px) {
+    body {
+        font-size: $base-font-size;
+    }
+    p {
+        font-size: $base-font-size;
+    }
+    h1 {
+        font-size: $h1-font-size;
+    } 
+    h2 {
+        font-size: $h2-font-size;
+    } 
+    h3 {
+        font-size: $h3-font-size;
+    }
 }
 
 /**
@@ -71,5 +94,7 @@ h3 {
     "hero",
     "timeline",
     "infoboxes",
-    "case"
+    "case",
+    "concept",
+    "contact"
 ;

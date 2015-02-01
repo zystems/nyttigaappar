@@ -1,0 +1,35 @@
+.Concept {
+	background-image: url("../../resources/business-communication-devices-3368-blurred.jpg");
+	//background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+.Concept-holder {
+	// background-image: url("../../resources/business-communication-devices-3368-blurred.jpg");
+	padding: 100px;
+	// background-repeat: no-repeat;
+	// background-position: 100% 50%;
+	text-align: center;
+	color: $light-text-color;
+	line-height: 1;
+
+	h1 {
+        font-size: 3em;
+        font-weight: $light-font-weight;
+        font-family: $heading-font-family;
+        margin: 0;
+    }
+
+    h2 {
+        margin: 15px 0 0 0;
+        font-size: 2em;
+        font-weight: $light-font-weight;
+        font-family: $heading-font-family;
+    }
+
+    h3 {
+        margin: 50px 0 0 0;
+        font-size: 1.5em;
+        font-weight: $bold-font-weight;
+        font-family: $heading-font-family;
+    }
+}

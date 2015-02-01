@@ -1,6 +1,5 @@
 .wrap {
 	margin: 0 auto;
-	height: 100%;
 	width: 90%;
 }
 
@@ -14,8 +13,7 @@
 	@extend .wrap;
 	@extend .group;
 	
-	height: 100%;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	position: relative;
 
 	&:first-of-type {
@@ -66,7 +64,7 @@
 .Timeline-imageContainer {
 	height: 100%;
 	width: 100%;
-	padding-top: 100px;
+	padding-top: 30px;
 	padding-bottom: 30px;
 
 	img {
@@ -89,6 +87,9 @@
 }
 
 @media screen and (min-width: 680px) {
+	.Timeline-box {
+		padding-bottom: 150px;
+	}
 	.Timeline-lineContainer {
 		left: 50%;
 		margin-left: -25px;
