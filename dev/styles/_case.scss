@@ -1,27 +1,30 @@
 .Example-holder {
+	width: 100vw;
+	h1 {
+		text-align: center;
+	}
 }
 
 .Example-imageholder {
-	width: 100%;
+	width: 100vw;
 	background-color: #4e4e4e;
-
-}
-
-.Example-imageholder-left {
-	background-color: transparent;
 }
 
 .Each-example {
 	color: #EFEFEF;
+	background-color: transparent;
 	padding: 2vh 0 2vh 0;
 	border-bottom: 1px solid #ffffff;
 	h2 {
 		margin-left: 5vw;
 	}
+	img {
+			display: none;
+		}
 }
 
 .Case-textholder {
-	-webkit-transition: height .5s;
+	transition: height .5s;
 	background-color: #FFFFFF;
 	width: 100vw;
 	height: 0;
@@ -35,5 +38,106 @@
 		color: $text-color;
 		margin: 0;
 		padding: 0 3vw 0 3vw;
+	}
+}
+
+@media screen and (min-width: 680px) {
+
+	.Example-holder {
+		overflow: hidden;
+	}
+
+	.Example-imageholder {
+		overflow: hidden;
+		cursor: pointer;
+	}
+	
+	.Each-example {
+		transition: 1s;
+		border-bottom: 0;
+		height: auto;
+		padding-bottom: 0;
+		h2 {
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+
+	.Example-image {
+		display: block;
+		margin: 0 auto;
+		padding: 30px 0 10px 0;
+		width: 200px;
+		height: 200px;
+		img {
+			size: cover;
+			height: 200px;
+			width: 200px;
+			display: inline;
+			object-fit: cover;
+			border-radius: 0 50px 0 50px;
+			border: 1px;
+		}
+		img.desaturate { filter: grayscale(100%); }
+	}
+
+	.Example-imageholder-left {
+		width: 33vw;
+		float: left;
+		background-color: #2e2e2e;
+	}
+
+	.Example-imageholder-center {
+		background-color: #6e6e6e;
+		border-top: 0;
+		width: 34vw;
+		float: left;
+		border-left: 0px;
+		border-right: 0px;
+		border-style: solid;
+		border-color: #ffffff;
+	}
+
+	.Example-imageholder-right {
+		width: 33vw;
+		background-color: #6e6e6e;
+		float: right;
+	}
+
+	.Case-textholder {
+		cursor: default;
+		position: relative;
+		transition: 1s;
+		width: 100vw;
+		min-height: 200px;
+		p {
+			cursor: text;
+			text-align: center;
+			padding: 0 20vw 0 20vw;
+			width: 60vw;
+			margin: 0;
+		}
+	}
+
+	.Case-textholder-left {
+		position: relative;
+		left: 0vw;
+		height: 200px;
+	}
+
+	.Case-textholder-center {
+		position: relative;
+		left: 65vw;
+	}
+
+	.Case-textholder-right {
+		position: relative;
+		left: 90vw;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.Each-example {
+		background-color: transparent !important;
 	}
 }
