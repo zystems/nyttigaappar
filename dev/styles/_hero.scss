@@ -33,6 +33,24 @@
     }
 }
 
+.Hero-arrowDown {
+    bottom: 30px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        bottom: 28px;
+    }
+}
+
 /**
 *   Values for different screen sizes
 */
