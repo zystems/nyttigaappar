@@ -10,11 +10,6 @@
 	display: table;
 }
 
-.space {
-	height: 180px;
-	width: 100%;
-}
-
 .Timeline-box {
 	@extend .wrap;
 	@extend .group;
@@ -22,6 +17,10 @@
 	height: 100%;
 	padding-bottom: 100px;
 	position: relative;
+
+	&:first-of-type {
+		margin-top: 150px
+	}
 }
 
 .Timeline-lineContainer {
