@@ -1,0 +1,18 @@
+.Footer {
+	color: $text-color;
+	height: 150px;
+	width: 100%;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		margin-top: 60px;
+		width: 70px;
+	}
+
+	a {
+		display: block;
+		margin-top: 10px;
+		text-align: center; 
+	}
+}

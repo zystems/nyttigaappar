@@ -1,38 +1,85 @@
-.Concept {
-	background-image: url("../../resources/business-communication-devices-3368-blurred.jpg");
-	//background-repeat: no-repeat;
-	background-position: 100% 50%;
+.ArrowDown {
+	height: 34px;
+	width: 100%;
+	
+	img {
+		display: block;
+		fill: #bbb;
+		height: 34px;
+		margin: 0 6.7%;
+		width: 34px;
+	}
 }
-.Concept-holder {
-	// background-image: url("../../resources/business-communication-devices-3368-blurred.jpg");
-	padding: 100px;
-	// background-repeat: no-repeat;
-	// background-position: 100% 50%;
+
+.wrap-Concept {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.Concept {
+	@extend .wrap-Concept;
+
+	background: #fff;
+	padding: 150px 5% 115px 5%;
+	position: relative;
 	text-align: center;
-	color: $text-color;
-	line-height: 1;
+}
+
+.Concept-holder {
+	margin: 0 auto;
+	text-align: center;
 
 	h1 {
-        font-size: 3em;
-        font-weight: $light-font-weight;
-        font-family: $heading-font-family;
-        margin: 0;
-    }
+		margin-top: 100px;
+	}
 
-    h2 {
-        margin: 15px 0 0 0;
-        font-size: 2em;
-        font-weight: $light-font-weight;
-        font-family: $heading-font-family;
-    }
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+	}
+}
 
-    h3 {
-        margin: 100px 0 0 0;
-        font-size: 2em;
-        font-weight: $bold-font-weight;
-        font-family: $heading-font-family;
-    }
-    img {
-        width: 600px;
-    }
+@media screen and (min-width: 520px) {
+	.ArrowDown {
+	height: 34px;
+	width: 100%;
+	
+	img {
+		height: 34px;
+		margin: 0 6.4%;
+		width: 34px;
+	}
+	}
+
+	.Concept-holder {
+
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 400px;
+	}
+}
+}
+
+@media screen and (min-width: 680px) {
+	.ArrowDown {
+		height: 50px;
+		width: 100%;
+		
+		img {
+			height: 50px;
+			margin: 0 auto;
+			width: 50px;
+		}
+	}
+
+	.Concept-holder {
+
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 500px;
+		}
+	}
 }
