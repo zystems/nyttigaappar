@@ -9,7 +9,7 @@
 	// background-repeat: no-repeat;
 	// background-position: 100% 50%;
 	text-align: center;
-	color: $light-text-color;
+	color: $text-color;
 	line-height: 1;
 
 	h1 {
@@ -27,9 +27,12 @@
     }
 
     h3 {
-        margin: 50px 0 0 0;
-        font-size: 1.5em;
+        margin: 100px 0 0 0;
+        font-size: 2em;
         font-weight: $bold-font-weight;
         font-family: $heading-font-family;
+    }
+    img {
+        width: 600px;
     }
 }

@@ -19,7 +19,7 @@ $(document).ready(function(){
 					xPos = '90% ';
 					break;
 				default:
-					xPos = '100% '
+					xPos = '30% '
 			}
 
 			var coords = xPos + yPos + 'px';
