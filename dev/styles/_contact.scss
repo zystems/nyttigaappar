@@ -1,13 +1,13 @@
-.wrap {
+.wrap-Contact {
 	margin: 0 auto;
 	width: 90%;
 }
 
 .Contact {
-	@extend .wrap;
+	@extend .wrap-Contact;
 
-	background: #eee;
-	padding: 100px 5% 200px 5%;
+	background: $color-grey;
+	padding: 100px 5% 150px 5%;
 	position: relative;
 	text-align: center;
 }

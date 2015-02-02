@@ -1,30 +1,103 @@
-.Infobox {
-	background-color: #FFF;
-	color: $text-color;
-	padding: 100px 10%;
-	text-align: left;
+.wrap-Infobox {
+	width: 95%;
+	margin: 0 auto;
 }
 
-.Infobox:nth-of-type(even) {
+.Infobox {
+	@extend .wrap-Infobox;
+	
+	padding: 75px 0;
+	text-align: left;
+	width: 100%;
+}
+
+.Infobox-grey {
+	background-color: #eee;
+	color: $text-color;
+}
+
+.Infobox-blue {
 	background-color: $color-blue;
 	color: $light-text-color;
 }
 
+.Infobox-left {
+	margin: 0;
+	width: 100%;
+}
+
+.Infobox-right {
+	margin: 0;
+	width: 100%;
+}
+
+.Infobox-left--content {
+	padding: 0 10%;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		padding: 50px 0 0 0;
+		width: 200px;
+	}
+}
+
+.Infobox-right--content {
+	padding: 0 10%;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		padding: 50px 0 0 0;
+		width: 300px;
+	}
+}
+
 @media screen and (min-width: 680px) {
-	.Infobox {
-		text-align: center;
-		padding: 100px 20%;
+	.group-Infobox {
+		clear: both;
+		content: "";
+		display: table;
 	}
-}
 
-@media screen and (min-width: 960px) {
 	.Infobox {
-		padding: 100px 25%;
+		@extend .group-Infobox;
+
+		display: block;
+		overflow: hidden;
+		padding: 125px 0;
+		position: relative;
 	}
-}
 
-@media screen and (min-width: 1160px) {
-	.Infobox {
-		padding: 100px 30%;
+	.Infobox-left {
+		float: left;
+		width: 50%;
+	}
+
+	.Infobox-right {
+		float: right;
+		width: 50%;
+	}
+
+	.Infobox-left--content {
+		padding: 0 50px 0 20%;
+		vertical-align: middle;
+
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 250px;
+		}
+	}
+
+	.Infobox-right--content {
+		padding: 0 20% 0 50px;
+		vertical-align: middle;
+
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 350px;
+		}
 	}
 }

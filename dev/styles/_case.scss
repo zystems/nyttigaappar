@@ -1,4 +1,5 @@
 .Example-holder {
+	background-color: #222;
 	padding-top: 100px;
 	// background-color: #dfdfdf;
 	width: 100vw;
@@ -14,7 +15,7 @@
 }
 
 .Each-example {
-	color: $text-color;
+	color: $light-text-color;
 	padding: 2vh 0 2vh 0;
 	border-bottom: 1px solid #ffffff;
 	h2 {
@@ -38,7 +39,7 @@
   		-webkit-transform: translateY(-50%);
   		-ms-transform: translateY(-50%);
   		transform: translateY(-50%);
-		color: $text-color;
+		color: $light-text-color;
 		margin: 0;
 		padding: 0 10% 0 10%;
 	}
@@ -80,7 +81,7 @@
 			width: 200px;
 			display: inline;
 			object-fit: cover;
-			border-radius: 0 50px 0 50px;
+			border-radius: 100%;
 			border: 1px;
 		}
 		//img.desaturate { filter: grayscale(100%); }
