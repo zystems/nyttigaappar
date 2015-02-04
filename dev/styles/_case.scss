@@ -1,7 +1,6 @@
 .Example-holder {
 	background-color: #222;
 	padding-top: 100px;
-	// background-color: #dfdfdf;
 	width: 100vw;
 	h1 {
 		text-align: center;
@@ -11,7 +10,6 @@
 .Example-imageholder {
 	cursor: pointer;
 	width: 100vw;
-	//background-color: #4e4e4e;
 }
 
 .Each-example {
@@ -29,7 +27,6 @@
 .Case-textholder {
 	opacity: 1;
 	transition: height .5s;
-	//background-color: #FFFFFF;
 	width: 100vw;
 	height: 0;
 	overflow: hidden;
@@ -79,30 +76,27 @@
 			size: cover;
 			height: 200px;
 			width: 200px;
-			display: inline;
+			display: block;
 			object-fit: cover;
-			border-radius: 100%;
+			border-radius: 50%;
 			border: 1px;
 		}
-		//img.desaturate { filter: grayscale(100%); }
 	}
 
 	.Example-imageholder-left {
 		width: 33vw;
 		float: left;
-		//background-color: #2e2e2e;
 	}
 
 	.Example-imageholder-center {
-		//background-color: #6e6e6e;
-		opacity: 0.5;
+		opacity: 0.3;
 		width: 34vw;
 		float: left;
 	}
 
 	.Example-imageholder-right {
 		width: 33vw;
-		opacity: 0.5;
+		opacity: 0.3;
 		float: right;
 	}
 
@@ -111,22 +105,17 @@
 		position: relative;
 		transition: .5s;
 		text-align: center;
-		// width: 100vw;
 		min-height: 300px;
 		z-index: 1;
 		p {
 			padding: 50px 20% 100px 20%;
 			cursor: text;
-			// text-align: center;
-			//width: 60vw;
-			// margin: 0;
 		}
 	}
 
 	.Case-textholder-left {
 		position: relative;
 		left: 0vw;
-		// height: 200px;
 	}
 
 	.Case-textholder-center {
@@ -146,6 +135,21 @@
 			padding: 10px 25% 100px 25%;
 		}
 	}
+
+	.Case-textholder-left {
+		left: -10vw;
+	}
+
+	.Example-imageholder-left {
+		width: 23vw;
+		margin-left: 10vw;
+	}
+
+	.Example-imageholder-right {
+		width: 23vw;
+		margin-right: 10vw;
+	}
+
 }
 
 @media screen and (min-width: 1160px) {

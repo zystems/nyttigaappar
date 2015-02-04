@@ -24,7 +24,10 @@ function toggleText(i) {
 	else {
 		switch (i) {
 			case 1:
-				c[0].style.left = 0;
+				if (size > 960)
+					c[0].style.left = '-10vw';
+				else
+					c[0].style.left = '0vw';
 				d[0].style.opacity = 1;
 				c[1].style.left = '65vw';
 				d[1].style.opacity = .5;
@@ -50,6 +53,18 @@ function toggleText(i) {
 		}
 	}
 }
+
+function changeTextBox() {
+	var c = document.getElementsByClassName('Case-textholder');
+	var size = window.innerWidth;
+	if (size > 960)
+	c[0].style.left = '-10vw';
+	else
+	c[0].style.left = '0vw';
+}
+
+window.addEventListener('resize', changeTextBox);
+
 jQuery(function () {
 
 	$('.Example-imageholder-left').click(function(){toggleText(1)});
