@@ -21,8 +21,9 @@ $bold-font-weight: 700;
 
 $background-color: #FFF;
 $color-blue: #0071BC;
-$text-color: #323232;
-$light-text-color: #FFF;
+$color-grey: #eee;
+$text-color: #555;
+$light-text-color: #fff;
 
 /**
 * Basic styling
@@ -83,6 +84,13 @@ h3 {
     h3 {
         font-size: $h3-font-size;
     }
+    a {
+        text-decoration: none;
+        color: $text-color;
+    }
+    a:hover {
+        color: #aaa;
+    }
 }
 
 /**
@@ -95,6 +103,8 @@ h3 {
     "timeline",
     "infoboxes",
     "case",
+    "contact",
     "concept",
-    "contact"
+    "footer",
+    "quote"
 ;

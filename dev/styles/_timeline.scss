@@ -1,4 +1,5 @@
 .wrap {
+	margin-top: 150px;
 	margin: 0 auto;
 	width: 90%;
 }
@@ -15,10 +16,10 @@
 	
 	padding-bottom: 50px;
 	position: relative;
+}
 
-	&:first-of-type {
-		margin-top: 150px
-	}
+.Timeline-box--first {
+	margin-top: 0px;
 }
 
 .Timeline-lineContainer {
@@ -40,14 +41,14 @@
 .Timeline-lineIcon {
 	position: absolute;
 	left: 50%;
-	margin-left: -20px;
-	height: 40px;
-	width: 40px;
+	margin-left: -17px;
+	height: 34px;
+	width: 34px;
 
 	img {
-		width: 45px;
-		height: 45px;
-		border-radius: 0 10px 0 10px;
+		width: 34px;
+		height: 34px;
+		border-radius: 100%;
 	}
 }
 
@@ -90,10 +91,23 @@
 	.Timeline-box {
 		padding-bottom: 150px;
 	}
+
 	.Timeline-lineContainer {
 		left: 50%;
 		margin-left: -25px;
 	}
+
+	.Timeline-lineIcon {
+		margin-left: -20px;
+		height: 40px;
+		width: 40px;
+
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+		}
+}
 	
 	.Timeline-content {
 		width: 100%;
@@ -116,7 +130,7 @@
 			display: block;
 			height: 200px;
 			margin: 0 auto;
-			max-width: 280px;
+			max-width: 250px;
 		}
 	}
 }

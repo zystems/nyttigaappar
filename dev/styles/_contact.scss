@@ -1,13 +1,13 @@
-.wrap {
+.wrap-Contact {
 	margin: 0 auto;
 	width: 90%;
 }
 
 .Contact {
-	@extend .wrap;
+	@extend .wrap-Contact;
 
-	background: #eee;
-	padding: 100px 5% 200px 5%;
+	background: $color-grey;
+	padding: 100px 5% 150px 5%;
 	position: relative;
 	text-align: center;
 }
@@ -30,8 +30,12 @@ input {
 	font: inherit;
 	height: 100%;
 	padding: 20px 20px;
-	transition: all 300ms ease-in-out;
+	transition: all 200ms ease-in-out;
 	width: 85%;
+
+	&:hover {
+		box-shadow: 0 0 3px #999;
+	}
 
 	&:focus {
 		outline: none;
@@ -40,19 +44,15 @@ input {
 }
 
 button {
-	background-color: $color-blue;
 	border: 0;
-	border-radius: 0 15px 0 15px;
-	color: white; 
-	font-family: $base-font-family;
-	font-size: $base-font-size;
-	font-weight: $bold-font-weight;
+	background: none;
 	margin-top: 50px;
-	padding: 10px 20px;
-	transition: all 300ms ease-in-out;
+
+	img {
+		width: 50px;
+	}
 
 	&:hover {
-		background-color: #005289;
 		cursor: pointer;
 	}
 }

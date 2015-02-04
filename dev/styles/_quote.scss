@@ -1,0 +1,17 @@
+.wrap-Quote {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.Quote {
+	@extend .wrap-Quote;
+	
+	padding: 125px 0;
+	text-align: center;
+
+	h2 {
+		font-weight: $light-font-weight;
+		font-style: italic;
+		line-height: 150%
+	}
+}
