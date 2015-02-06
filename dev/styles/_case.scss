@@ -1,5 +1,5 @@
 .Example-holder {
-	background-color: $color-grey;
+	background-color: $color-darkgrey;
 	padding-bottom: 70px;
 	width: 100vw;
 	h1 {
@@ -13,7 +13,7 @@
 }
 
 .Each-example {
-	color: $text-color;
+	color: $light-text-color;
 	padding: 2vh 0 2vh 0;
 	border-bottom: 1px solid #ffffff;
 	h2 {
@@ -29,7 +29,6 @@
 	transition: height .5s;
 	width: 100vw;
 	height: 0;
-	padding-top: 50px;
 	overflow: hidden;
 	p {
 		position: relative;
@@ -37,7 +36,7 @@
   		-webkit-transform: translateY(-50%);
   		-ms-transform: translateY(-50%);
   		transform: translateY(-50%);
-		color: $text-color;
+		color: $light-text-color;
 		margin: 0;
 		padding: 0 10% 0 10%;
 	}
@@ -132,6 +131,8 @@
 
 @media screen and (min-width: 960px) {
 	.Case-textholder {
+		padding-top: 50px;
+
 		p {
 			padding: 10px 25% 100px 25%;
 		}

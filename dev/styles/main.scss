@@ -22,6 +22,7 @@ $bold-font-weight: 700;
 $background-color: #FFF;
 $color-blue: #0071BC;
 $color-grey: #F2F0EB; //#F2F0EB = enfo-grey
+$color-darkgrey: #222;
 $text-color: #333;
 $light-text-color: #fff;
 
@@ -68,6 +69,14 @@ h3 {
     font-weight: $bold-font-weight;
 }
 
+a {
+        text-decoration: none;
+        color: $text-color;
+    }
+    a:hover {
+        color: #aaa;
+    }
+
 @media screen and (min-width: 680px) {
     body {
         font-size: $base-font-size;
@@ -83,13 +92,6 @@ h3 {
     } 
     h3 {
         font-size: $h3-font-size;
-    }
-    a {
-        text-decoration: none;
-        color: $text-color;
-    }
-    a:hover {
-        color: #aaa;
     }
 }
 
