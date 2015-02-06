@@ -1,7 +1,7 @@
 .Example-holder {
-	background-color: #222;
-	padding-top: 100px;
+	background-color: $color-darkgrey;
 	width: 100vw;
+	padding-bottom: 70px;
 	h1 {
 		text-align: center;
 	}
@@ -14,14 +14,21 @@
 
 .Each-example {
 	color: $light-text-color;
-	padding: 2vh 0 2vh 0;
-	border-bottom: 1px solid #ffffff;
+	padding: 2% 0 2% 0;
 	h2 {
 		margin-left: 10%;
+		float: left;
 	}
 	img {
-			display: none;
-		}
+		display: none;
+	}
+	.Arrow {
+		height: 15px;
+		display: block;
+		float: right;
+		padding: 0 10% 0 0;
+		margin-top: 20px;
+	}
 }
 
 .Case-textholder {
@@ -46,6 +53,12 @@
 
 	.Example-holder {
 		overflow: hidden;
+		h2 {
+			float: none;
+		}
+		.Arrow {
+			display: none;
+		}
 	}
 
 	.Example-imageholder {
@@ -131,6 +144,8 @@
 
 @media screen and (min-width: 960px) {
 	.Case-textholder {
+		padding-top: 50px;
+
 		p {
 			padding: 10px 25% 100px 25%;
 		}

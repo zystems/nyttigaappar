@@ -5,19 +5,19 @@ function toggleText(i) {
 	if (size < 680) {
 		switch (i) {
 			case 1:
-				(c[0].style.height == '0px' || c[0].style.height == 0 ? c[0].style.height = '200px' : c[0].style.height = '0px');
+				(c[0].style.height == '0px' || c[0].style.height == 0 ? c[0].style.height = '220px' : c[0].style.height = '0px');
 				c[1].style.height = '0px';
 				c[2].style.height = '0px';
 				break;
 			case 2:
 				c[0].style.height = '0px';
-				(c[1].style.height == '0px' || c[1].style.height == 0 ? c[1].style.height = '200px' : c[1].style.height = '0px');
+				(c[1].style.height == '0px' || c[1].style.height == 0 ? c[1].style.height = '220px' : c[1].style.height = '0px');
 				c[2].style.height = '0px'
 				break;
 			case 3:
 				c[0].style.height = '0px';
 				c[1].style.height = '0px';
-				(c[2].style.height == '0px' || c[1].style.height == 0 ? c[2].style.height = '200px' : c[2].style.height = '0px');
+				(c[2].style.height == '0px' || c[1].style.height == 0 ? c[2].style.height = '220px' : c[2].style.height = '0px');
 				break;
 		}
 	}
@@ -30,23 +30,23 @@ function toggleText(i) {
 					c[0].style.left = '0vw';
 				d[0].style.opacity = 1;
 				c[1].style.left = '65vw';
-				d[1].style.opacity = .5;
+				d[1].style.opacity = .3;
 				c[2].style.left = '90vw';
-				d[2].style.opacity = .5;
+				d[2].style.opacity = .3;
 				break;
 			case 2:
 				c[0].style.left = '-90vw';
-				d[0].style.opacity = .5;
+				d[0].style.opacity = .3;
 				c[1].style.left = '-33vw';
 				d[1].style.opacity = 1;
 				c[2].style.left = '32vw';
-				d[2].style.opacity = .5;
+				d[2].style.opacity = .3;
 				break;
 			case 3:
 				c[0].style.left = '-160vw';
-				d[0].style.opacity = .5;
+				d[0].style.opacity = .3;
 				c[1].style.left = '-130vw';
-				d[1].style.opacity = .5;
+				d[1].style.opacity = .3;
 				c[2].style.left = '-67vw';
 				d[2].style.opacity = 1;
 				break;
