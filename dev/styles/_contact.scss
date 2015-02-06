@@ -6,7 +6,8 @@
 .Contact {
 	@extend .wrap-Contact;
 
-	background: $color-grey;
+	background: $color-darkgrey;
+	color: $light-text-color;
 	padding: 100px 5% 150px 5%;
 	position: relative;
 	text-align: center;

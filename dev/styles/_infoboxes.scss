@@ -9,15 +9,16 @@
 	padding: 75px 0;
 	text-align: left;
 	width: 100%;
-
-	&:first-of-type {
-		padding-bottom: 45px;
-	}
 }
 
 .Infobox-grey {
 	background-color: $color-grey;
 	color: $text-color;
+}
+
+.Infobox-darkgrey {
+	background-color: $color-darkgrey;
+	color: $light-text-color;
 }
 
 .Infobox-blue {
