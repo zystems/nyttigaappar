@@ -253,8 +253,8 @@
             <p>
                 Fyll i din e-post så kontaktar vi dig med mer information.
             </p>
-            <form class="Contact-form" action="" method="post" name="contact-form">
-                <input type="text" name="e-post" />
+            <form class="Contact-form" id="contactform" method="post" name="contact-form">
+                <input type="text" name="e-post" id="email"/>
                 <button class="Contact-form--button" type="submit"><img src="dev/res/check.svg"></button>
             </form> <!-- end Contact-form -->
         </section> <!-- end ID-Contact -->
@@ -279,6 +279,76 @@
         </script>
 
         <script src="//localhost:35729/livereload.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                var validateEmail = function(text){
+                        var testEmail = /^[A-Ö0-9._%+-]+@([A-Ö0-9-]+\.)+[A-Ö]{2,4}$/i;
+                        if (testEmail.test(text))
+                            return true;
+                        else   
+                            return false;
+                };
+                
+                $("#contactform").submit(function(e){
+                    e.preventDefault();
+                    
+                    if($("#email").val()==""){
+                        $("#email").attr("style","");
+                        return ;
+                    }
+                    
+                    if(validateEmail($("#email").val())){
+                        $("#email").attr("style","background: #51B848;border-color: #51B848;color: white;");
+                    }else{
+                         $("#email").attr("style","background: rgb(192, 56, 56);border-color: rgb(192, 56, 56);color: white;");
+                    }
+                });
+                
+                $("#email").blur(function(e){
+                    
+                    if($("#email").val()==""){
+                        $("#email").attr("style","");
+                        return ;
+                    }
+                    
+                    if(validateEmail($("#email").val())){
+                        $("#email").attr("style","background: #51B848;border-color: #51B848;color: white;");
+                    }else{
+                         $("#email").attr("style","background: rgb(192, 56, 56);border-color: rgb(192, 56, 56);color: white;");
+                    }
+                });
+                
+                $("#email").keyup(function(e){
+                    
+                    if($("#email").val()==""){
+                        $("#email").attr("style","");
+                        return ;
+                    }
+                    
+                    if(validateEmail($("#email").val())){
+                        $("#email").attr("style","background: #51B848;border-color: #51B848;color: white;");
+                    }else{
+                         $("#email").attr("style","");
+                    }
+                });
+                
+                 $("#email").focusin(function(e){
+                    if($("#email").val()==""){
+                        $("#email").attr("style","");
+                        return ;
+                    }
+                    
+                    if(validateEmail($("#email").val())){
+                        $("#email").attr("style","background: #51B848;border-color: #51B848;color: white;");
+                    }else{
+                         $("#email").attr("style","");
+                    }
+                });
+                
+            });
+            
+        </script>
 
     </body>
 </html>
