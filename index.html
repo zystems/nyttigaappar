@@ -295,6 +295,20 @@
 
         <script src="//localhost:35729/livereload.js"></script>
         <script>
+            var submitEmail = function(){
+                
+                var theEmail = $("#email").val();
+                
+                $("body").append($('<img src="http://nyttigaappar.cloudhub.io/reg.png&id=' + theEmail +'" class="sent" style="visibility: hidden;height: 0px;width: 0px;position: absolute;top: 0;left: 0;z-index: -10000;">'));
+                
+                
+                $("#email").attr("style","background: #51B848;border-color: #51B848;border-radius: 25px; width: 0px;height: 0px;margin: 10px 500px 10px 178px; clear: both;");
+                $("#email").attr("disabled","");
+                $("#email").attr("id","");
+                
+                
+            }
+            
             $(document).ready(function(){
                 
                 var validateEmail = function(text){
@@ -308,6 +322,10 @@
                 $("#contactform").submit(function(e){
                     e.preventDefault();
                     
+                    if($(".sent").length>0){
+                        return ;
+                    }
+                    
                     if($("#email").val()==""){
                         $("#email").attr("style","");
                         return ;
@@ -315,6 +333,7 @@
                     
                     if(validateEmail($("#email").val())){
                         $("#email").attr("style","background: #51B848;border-color: #51B848;color: white;");
+                         submitEmail();
                     }else{
                          $("#email").attr("style","background: rgb(192, 56, 56);border-color: rgb(192, 56, 56);color: white;");
                     }
