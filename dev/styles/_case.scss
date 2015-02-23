@@ -1,5 +1,5 @@
 .Example-holder {
-	background-color: $color-darkgrey;
+	background-color: $color-lightgrey;
 	width: 100vw;
 	padding-bottom: 70px;
 	h1 {
@@ -13,7 +13,7 @@
 }
 
 .Each-example {
-	color: $light-text-color;
+	color: $text-color;
 	padding: 2% 0 2% 0;
 	h2 {
 		margin-left: 10%;
@@ -43,7 +43,7 @@
   		-webkit-transform: translateY(-50%);
   		-ms-transform: translateY(-50%);
   		transform: translateY(-50%);
-		color: $light-text-color;
+		color: $text-color;
 		margin: 0;
 		padding: 0 10% 0 10%;
 	}
